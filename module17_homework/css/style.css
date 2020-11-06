@@ -122,10 +122,12 @@ nav {
 
 .address-heading > span:first-child {
     font-size: 14px;
+    color: #4F4F4F;
 }
 
 .address-heading > span:last-child {
     font-size: 20px;
+
 }
 
 .teams__container {
