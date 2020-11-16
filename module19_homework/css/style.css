@@ -1,5 +1,6 @@
-body {
-  font-family: Roboto;
+/* generic */
+.is-animated {
+  transition: all 400ms ease;
 }
 
 nav {
@@ -14,41 +15,41 @@ nav .navbar__container {
   justify-content: space-between;
   align-items: center;
 }
-nav .navbar__container .navbar-menu {
+nav .navbar__container .navbar__menu {
   display: flex;
   align-items: center;
 }
-nav .navbar__container .navbar-menu .navbar-menu__item {
+nav .navbar__container .navbar__menu-item {
   margin-right: 30px;
   font-size: 16px;
 }
-nav .navbar__container .navbar-menu .navbar-menu__item:hover {
+nav .navbar__container .navbar__menu-item:hover {
   color: cadetblue;
   font-size: 20px;
   cursor: pointer;
 }
-nav .navbar__container .navbar-menu .navbar-menu__login {
+nav .navbar__container .navbar__menu-login {
   padding: 12px 36px 12px 36px;
   border: 1px solid;
   border-radius: 8px;
-}
-nav .navbar__container .navbar-menu .navbar-menu__login:hover {
-  background: cadetblue;
-  color: cadetblue;
-  cursor: pointer;
-}
-nav .navbar__container .navbar-menu .navbar-menu__login-text {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
 }
+nav .navbar__container .navbar__menu-login:hover {
+  background: cadetblue;
+  cursor: pointer;
+}
 
 .description__container {
-  margin-top: 116px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 116px;
 }
-.description__container .description__text {
+.description__container h1 {
+  padding-top: 61px;
+}
+.description__container-text {
   font-size: 24px;
   width: 70%;
   max-width: 100;
@@ -56,49 +57,55 @@ nav .navbar__container .navbar-menu .navbar-menu__login-text {
   line-height: 147.3%;
 }
 
-.contacts {
+.contacts__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   background: #F7F9FB;
   width: 100%;
   height: 341px;
   margin-top: 80px;
 }
-.contacts .contacts__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contacts .contacts__container h2 {
+.contacts__container h2 {
   margin-bottom: 43px;
 }
-.contacts .contacts__container .address__container {
+.contacts__container .address__container {
   display: flex;
   width: 35%;
   justify-content: space-between;
   margin-right: 3%;
 }
-.contacts .contacts__container .address__container .address__heading {
+.contacts__container .address__container-heading {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.contacts .contacts__container .address__container .address__heading > span:first-child {
+.contacts__container .address__container span:first-child {
   font-size: 14px;
   color: #4F4F4F;
   line-height: 6px;
 }
-.contacts .contacts__container .address__container .address__heading > span:last-child {
+.contacts__container .address__container span:last-child {
   font-size: 20px;
 }
 
 .teams__container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   margin-top: 80px;
+}
+@media screen and (min-width: 1200 px) {
+  .teams__container {
+    width: 980px;
+  }
+}
+@media screen and (max-width: 1199 px) {
+  .teams__container {
+    width: 100%;
+  }
 }
 .teams__container .teams__item-container {
   display: flex;
@@ -126,7 +133,7 @@ nav .navbar__container .navbar-menu .navbar-menu__login-text {
   color: #828282;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,16 +142,16 @@ nav .navbar__container .navbar-menu .navbar-menu__login-text {
   margin-top: 120px;
   background: #3F3D56;
 }
-.footer-container .copyright {
+.footer__container-copyright {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.4);
 }
-.footer-container .social-media > a {
+.footer__container-social-media > a {
   color: white;
   font-size: 26.7px;
   margin-left: 19.3px;
 }
-.footer-container .social-media > a:hover {
+.footer__container-social-media > a:hover {
   color: yellow;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
   cursor: pointer;
