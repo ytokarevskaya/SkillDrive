@@ -1,21 +1,22 @@
-let menu = document.querySelector(".navbar__container-gamburger");
+let mobileBurger = document.querySelector(".mobile__burger"),
+    mobileMenu = document.querySelector(".menu__mobile");
 
-menu.addEventListener("click", function () {
-    if(this.classList.contains('is-close')) {
-        document.querySelectorAll(".navbar__container-gamburger-rect").forEach((el,i) => {
-        el.style.animation = `rect-${i} 1.4s ease-in-out both`; })
-        setTimeout(() => { this.classList.remove('is-close') }, 1400);
-        document.querySelector(".menu__mobile").style.opacity = 1;
-        document.querySelector("main").style.opacity = 0;
-        document.querySelector("footer").style.display = "none";
+mobileBurger.addEventListener("click", function () {
+    if(mobileBurger.classList.contains('is-active')) {
+        document.querySelectorAll(".mobile__burger-rect").forEach((el,i) => {
+        el.style.animation = `rect-${i} 1s ease-in-out both`; })
+        mobileBurger.classList.remove('is-active');
+        mobileMenu.classList.remove("is-active");
     } else {
-        document.querySelectorAll(".navbar__container-gamburger-rect").forEach((el,i) => {
-        el.style.animation = `rect-${i+3} 1s ease-out both reverse`; })
-        setTimeout(() => { 
-          this.classList.add('is-close') 
-        }, 1000);
-        document.querySelector(".menu__mobile").style.opacity = 0;
-        document.querySelector("main").style.opacity = 1;
-        document.querySelector("footer").style.display = "block";
+        document.querySelectorAll(".mobile__burger-rect").forEach((el,i) => {
+        el.style.animation = `rect-${i+3} 0.8s ease-out both reverse`; })
+        mobileBurger.classList.add('is-active');
+        mobileMenu.classList.add("is-active");
+
     }
 })
+
+
+
+
+// parentMobWrapper.insertBefore(menu,document.querySelector(".menu__mobile"));

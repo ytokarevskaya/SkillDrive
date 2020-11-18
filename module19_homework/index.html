@@ -14,11 +14,6 @@
             <nav>
                 <div class="navbar__container">
                     <img src="asset/Logo.svg" class="navbar__brand-text" alt="logo">
-                    <div class="navbar__container-gamburger is-mobile is-close">
-                        <div class="navbar__container-gamburger-rect"></div>
-                        <div class="navbar__container-gamburger-rect"></div>
-                        <div class="navbar__container-gamburger-rect"></div>
-                    </div>
                     <div class="navbar__menu is-desktop">
                         <a class="navbar__menu-item is-animated" href="https://www.google.com/" target="_blank" rel="nofollow">О нас</a>
                         <a class="navbar__menu-item is-animated" href="https://www.google.com/" target="_blank" rel="nofollow">Условия</a>
@@ -27,19 +22,27 @@
                             <a class="navbar__menu-login-text" href="" target="_blank" rel="nofollow">Войти</a>
                         </div>
                     </div>
-                    <nav class="menu__mobile is-mobile is-animated">
-                        <a href="" class="menu__mobile-link">Войти</a>
-                        <a href="" class="menu__mobile-link">О нас</a>
-                        <a href="" class="menu__mobile-link">Условия</a>
-                        <a href="" class="menu__mobile-link">Частые вопросы</a>
-                    </nav>
-
                 </div>
                 </div>
             </nav>
 
         </header>
-        <main class="is-animated">
+
+        <div class="mobile__wrapper">
+            <nav class="menu__mobile is-mobile is-animated is-active">
+                <a href="" class="menu__mobile-link">Войти</a>
+                <a href="" class="menu__mobile-link">О нас</a>
+                <a href="" class="menu__mobile-link">Условия</a>
+                <a href="" class="menu__mobile-link">Частые вопросы</a>
+            </nav>
+            <div class="mobile__burger is-mobile is-active">
+                <div class="mobile__burger-rect"></div>
+                <div class="mobile__burger-rect"></div>
+                <div class="mobile__burger-rect"></div>
+            </div>
+        </div>
+
+        <main>
             <section class="description">
                 <div class="description__container">
                     <img src="asset/aboutUs.svg" alt="4 программиста и собака">

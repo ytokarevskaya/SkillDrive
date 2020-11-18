@@ -1,7 +1,7 @@
 @keyframes rect-0 {
     30%, 100% { top: 40%; }
-    30% { transform: rotateZ(0deg)}
-    50%, 100% { transform: rotateZ(-225deg)} }
+    50% { transform: rotateZ(0deg)}
+    70%, 100% { transform: rotateZ(-225deg)} }
   
   @keyframes rect-1 {
       0%,30% { opacity: 1; }   
@@ -9,13 +9,13 @@
   
   @keyframes rect-2 {
       30%, 100% { top: 40%; }
-      30% { transform: rotateZ(0deg)}
-      50%, 100% { transform: rotateZ(-315deg)} }
+      50% { transform: rotateZ(0deg)}
+      70%, 100% { transform: rotateZ(-315deg)} }
   
   @keyframes rect-3 {
       30%, 100% { top: 40%; }
-      30% { transform: rotateZ(0deg)}
-      50%, 100% { transform: rotateZ(-225deg)} }
+      50% { transform: rotateZ(0deg)}
+      70%, 100% { transform: rotateZ(-225deg)} }
   
   @keyframes rect-4 {
       0%,30% { opacity: 1; }   
@@ -23,5 +23,5 @@
   
   @keyframes rect-5 {
       30%, 100% { top: 40%; }
-      30% { transform: rotateZ(0deg)}
-      50%, 100% { transform: rotateZ(-315deg)} }
+      50% { transform: rotateZ(0deg)}
+      70%, 100% { transform: rotateZ(-315deg)} }
