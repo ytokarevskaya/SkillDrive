@@ -1,5 +1,7 @@
 @import "font-rule.scss", "breakpoints.scss";
 
+@import "keyframes.scss";
+
 @mixin standart-container () {
   display: flex;
   flex-direction: column;
@@ -18,6 +20,10 @@
   @include breakpoint(large) {
     display: none!important;
   }
+}
+
+.is-active {
+
 }
 
 h1 {
@@ -48,6 +54,25 @@ nav {
       justify-content: space-between;
       align-items: center;
 
+      &-gamburger {
+        position: absolute;
+        z-index: 6;
+
+        width: 18px;
+        height: 12px;
+        left: 85%;
+        cursor: pointer;
+        &-rect {
+          position: absolute;
+          width: 100%;
+          height: 20%;
+          background: black;
+          &:nth-child(1) { top: 0%; }
+          &:nth-child(2) { top: 40%; }
+          &:nth-child(3) { top: 80%; }
+        }
+      }
+
       .navbar__menu {
         display: flex;
         align-items: center;
@@ -75,6 +100,27 @@ nav {
           }
       }
     }
+}
+
+.menu__mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 20% 10%;
+  z-index: 5;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  &-link {
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: 60%;
+}
 }
 
 .description__container {
@@ -269,31 +315,11 @@ nav {
   }
 }
 
-  .menu__mobile-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    padding: 60px 30px;
 
-    display: flex;
-    flex-direction: column;
-    padding-right: 60px;
-    background: white;
 
-    &-link {
-      line-height: 32px;
-      font-size: 50px;
-      font-weight: bold;
-      margin-bottom: 50px;
-      color: $teams-prof-color;
-      &.is-active {
-        color: black;
-      }
-  }
 
-  }
 
-// cd /d D:\!SkillDrive\module19_homework
+/* 
+cd /d D:\!SkillDrive\module19_homework
+npm run watch-sass
+*/
