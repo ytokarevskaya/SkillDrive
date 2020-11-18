@@ -85,7 +85,7 @@ nav {
   }   
     img {
       @include breakpoint (medium) {
-        width: 75%;
+        width: calc(100% - 100px);
       }   
     }
 
@@ -269,5 +269,31 @@ nav {
   }
 }
 
-//sass --watch sass/base.scss:css/style.css
-// cd /d D:\!SkillDrive
+  .menu__mobile-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 60px 30px;
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    background: white;
+
+    &-link {
+      line-height: 32px;
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: $teams-prof-color;
+      &.is-active {
+        color: black;
+      }
+  }
+
+  }
+
+// cd /d D:\!SkillDrive\module19_homework
