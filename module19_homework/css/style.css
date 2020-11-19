@@ -1,3 +1,4 @@
+/* Burger <==> Close */
 @keyframes rect-0 {
   30%, 100% {
     top: 40%;
@@ -397,7 +398,7 @@ nav .navbar__container .navbar__menu-login:hover {
 }
 @media screen and (max-width: 1199px) {
   .teams__container .teams__item-container img {
-    width: 80px;
+    max-width: 50%;
   }
 }
 .teams__container .teams__item-container .teams__item {
