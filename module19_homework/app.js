@@ -1,5 +1,5 @@
-let mobileBurger = document.querySelector(".mobile__burger"),
-    mobileMenu = document.querySelector(".menu__mobile");
+const mobileBurger = document.querySelector(".mobile__burger"),
+    mobileMenu = document.querySelector(".mobile__wrapper");
 
 mobileBurger.addEventListener("click", function () {
     if(mobileBurger.classList.contains('is-active')) {
@@ -12,11 +12,5 @@ mobileBurger.addEventListener("click", function () {
         el.style.animation = `rect-${i+3} 0.8s ease-out both reverse`; })
         mobileBurger.classList.add('is-active');
         mobileMenu.classList.add("is-active");
-
     }
 })
-
-
-
-
-// parentMobWrapper.insertBefore(menu,document.querySelector(".menu__mobile"));
