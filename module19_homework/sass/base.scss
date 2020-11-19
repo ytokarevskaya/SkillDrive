@@ -194,8 +194,11 @@ h2 {
 .questions__container {
   @include standart-container();
   img {
-    display: none;
     padding-top: 119px;
+    @include breakpoint (medium) {
+      padding-top: 61px;
+      width: 70%;
+    }
   }
   h1 {
     padding-top: 84px;
@@ -222,11 +225,16 @@ h2 {
     border: 1px none;
     border-radius: 8px;
     cursor: pointer;
+
     display: flex;
     justify-content: space-between;
-    line-height: 20px;
+    align-items: center;
 
+    line-height: 20px;
     font-size: 20px;
+    &.is-active {
+      background: rgba(97, 161, 153, 0.15);
+    }
     @include breakpoint (medium) {
       font-size: 14px;
     }
@@ -239,16 +247,40 @@ h2 {
     .icon-arrow {
       padding-right: 28px;
       padding-left: 5%;
-      margin-top: 3px;
       color: #A0A7AD;
+      transition: all 0.2s ease-out;
+      &.is-active {
+        transform: rotateX(180deg);
+      }
     }
-    &:hover {
-      border: 2px solid green;
+
+  }
+  &-answer {
+    align-self: flex-start;
+    padding-left: calc(10% + 20px);
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.2s ease-out;
+    &.is-active {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      @include breakpoint (medium) {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+    &:last-child.is-active {
+      margin-bottom: 20px;
+    }
+    @include breakpoint (medium) {
+      width: 70%;
     }
   }
+
 }
 
 /* 
 cd /d D:\!SkillDrive\module19_homework
 npm run watch-sass
+
 */

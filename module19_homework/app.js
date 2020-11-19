@@ -14,3 +14,23 @@ mobileBurger.addEventListener("click", function () {
         mobileMenu.classList.add("is-active");
     }
 })
+
+document.querySelectorAll(".questions__container-rect").forEach((el,i) => {
+    el.addEventListener("click", function(){
+        if(!document.querySelectorAll(".questions__container-answer")[i].classList.contains("is-active")) {
+            el.classList.add("is-active");
+            document.querySelectorAll(".questions__container-answer")[i].style.maxHeight = document.querySelectorAll(".questions__container-answer")[i].scrollHeight + "px";
+            document.querySelectorAll(".icon-arrow")[i].classList.add("is-active");
+        } else {
+            el.classList.remove("is-active");
+            document.querySelectorAll(".questions__container-answer")[i].style.maxHeight = 0;
+            document.querySelectorAll(".icon-arrow")[i].classList.remove("is-active");
+            
+        }
+        document.querySelectorAll(".questions__container-answer")[i].classList.toggle("is-active");
+    })
+});
+
+activateFunc = (query) => query.classList.toggle("is-active");
+
+
