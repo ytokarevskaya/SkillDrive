@@ -25,7 +25,6 @@ document.querySelectorAll(".questions__container-rect").forEach((el,i) => {
             el.classList.remove("is-active");
             document.querySelectorAll(".questions__container-answer")[i].style.maxHeight = 0;
             document.querySelectorAll(".icon-arrow")[i].classList.remove("is-active");
-            
         }
         document.querySelectorAll(".questions__container-answer")[i].classList.toggle("is-active");
     })

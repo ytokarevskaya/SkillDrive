@@ -462,17 +462,19 @@ nav .navbar__container .navbar__menu-login:hover {
   padding-top: 84px;
   line-height: 10px;
 }
-.questions__container p {
+.questions__container span {
   font-size: 24px;
   text-align: center;
   line-height: 23px;
   padding-bottom: 60px;
+  padding-top: 30px;
 }
 @media screen and (max-width: 1199px) {
-  .questions__container p {
+  .questions__container span {
     font-size: 16px;
     width: 80%;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 }
 .questions__container-rect {
@@ -519,6 +521,7 @@ nav .navbar__container .navbar__menu-login:hover {
   overflow: hidden;
   max-height: 0;
   transition: all 0.2s ease-out;
+  font-size: 20px;
 }
 .questions__container-answer.is-active {
   margin-top: 20px;
@@ -528,6 +531,7 @@ nav .navbar__container .navbar__menu-login:hover {
   .questions__container-answer.is-active {
     margin-top: 10px;
     margin-bottom: 30px;
+    padding-left: calc(10% + 10px);
   }
 }
 .questions__container-answer:last-child.is-active {
@@ -535,7 +539,8 @@ nav .navbar__container .navbar__menu-login:hover {
 }
 @media screen and (max-width: 1199px) {
   .questions__container-answer {
-    width: 70%;
+    width: 60%;
+    font-size: 14px;
   }
 }
 
