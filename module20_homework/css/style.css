@@ -933,7 +933,6 @@ nav .navbar__container .navbar__menu-login:hover {
 /* Main-page */
 .heading__container {
   display: flex;
-  display: none;
 }
 .heading__container img {
   margin-top: -90px;
@@ -962,7 +961,6 @@ nav .navbar__container .navbar__menu-login:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  display: none;
 }
 .main-description__container-block {
   display: flex;
@@ -987,33 +985,26 @@ nav .navbar__container .navbar__menu-login:hover {
   font-size: 20px;
 }
 
-.rent-rule__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 552px;
-  width: 100%;
-  background: #F7F9FB;
-}
-.rent-rule__container h2 {
-  font-weight: 500;
-}
-.rent-rule__container-circles {
+.circles__container {
   display: flex;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 64px;
 }
-.rent-rule__container-circles__block {
+.circles__container-line {
+  width: 241px;
+  border-bottom: 1px dashed #9D9AAC;
+  margin: 0px 1%;
+}
+.circles__container-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.rent-rule__container-circles__block:last-child {
+.circles__container-wrapper:last-child {
   padding-right: 0px;
 }
-.rent-rule__container-circles__block-circle {
+.circles__container-wrapper-circle {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1026,17 +1017,71 @@ nav .navbar__container .navbar__menu-login:hover {
   font-size: 48px;
   color: white;
 }
-.rent-rule__container-circles__block span {
+.circles__container-wrapper span {
   position: absolute;
   margin-top: 144px;
   font-size: 24px;
-  width: 15%;
+  width: 14%;
   text-align: center;
 }
-.rent-rule__container-circles-line {
-  width: 241px;
-  border-bottom: 1px dashed #9D9AAC;
-  margin: 0px 1%;
+
+.rent-rule__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 552px;
+  width: 100%;
+  background: #F7F9FB;
+}
+.rent-rule__container h2 {
+  font-weight: 500;
+}
+
+.profit__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 552px;
+  width: 100%;
+  padding-bottom: 3%;
+}
+.profit__container h2 {
+  font-weight: 500;
+}
+.profit__container span {
+  padding-top: 21px;
+  font-size: 24px;
+}
+.profit__container .circles__container-line {
+  width: 139px;
+}
+
+.review__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 599px;
+  background: #F7F9FB;
+  padding-top: 110px;
+}
+.review__container h2 {
+  font-weight: 500;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 104px;
+}
+.cta__container h2 {
+  padding-top: 51px;
+  font-weight: 500;
+}
+.cta__container button {
+  margin-top: 40px;
 }
 
 /* Error404-page */

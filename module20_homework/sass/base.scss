@@ -279,7 +279,6 @@ h2 {
 
 .heading__container {
   display: flex;
-  display: none;
 
   img {
     margin-top: -90px;
@@ -307,7 +306,7 @@ h2 {
 .main-description__container {
   @include standart-container();
   padding-top: 120px;
-  display: none;
+
 
   &-block {
     display: flex;
@@ -335,6 +334,48 @@ h2 {
   }
 }
 
+.circles__container {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 64px;
+  
+  &-line {
+    width: 241px;
+    border-bottom: 1px dashed #9D9AAC;
+    margin: 0px 1%;
+  }
+
+  &-wrapper {
+    @include standart-container();
+    
+    &:last-child {
+      padding-right: 0px;
+    }
+    &-circle {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      height: 108px;
+      width: 108px;
+      background: $green-rect;
+      border-radius: 50%;
+
+      font-weight: 900;
+      font-size: 48px;
+      color: white;
+  }
+  span {
+    position: absolute;
+    margin-top: 144px;
+    font-size: 24px;
+    width: 14%;
+    text-align: center;
+  }
+  }
+}
+
 .rent-rule__container {
   @include standart-container();
   justify-content: center;
@@ -343,53 +384,50 @@ h2 {
   background: $translucent-rect;
   h2 {
     font-weight: 500;
-    
-  }
-  &-circles {
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
-
-    padding-bottom: 64px;
-
-    &__block {
-      @include standart-container();
-      
-      &:last-child {
-        padding-right: 0px;
-      }
-      &-circle {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        height: 108px;
-        width: 108px;
-        background: $green-rect;
-        border-radius: 50%;
-
-        font-weight: 900;
-        font-size: 48px;
-        color: white;
-    }
-    span {
-      position: absolute;
-      margin-top: 144px;
-      font-size: 24px;
-      width: 15%;
-      text-align: center;
-    }
-    }
-    &-line {
-      width: 241px;
-      border-bottom: 1px dashed #9D9AAC;
-      margin: 0px 1%;
-    }
-
   }
 }
 
+.profit__container {
+  @include standart-container();
+  justify-content: center;
+  height: 552px;
+  width: 100%;
+  padding-bottom: 3%;
+  
+  h2 {
+    font-weight: 500;
 
+  }
+  span {
+    padding-top: 21px;
+    font-size: 24px;
+  }
+  .circles__container-line {
+    width: 139px;
+  }
+}
+
+.review__container {
+  @include standart-container();
+  height: 599px;
+  background: $translucent-rect;
+  padding-top: 110px;
+  h2 {
+    font-weight: 500;
+  }
+}
+
+.cta__container {
+  @include standart-container();
+  padding-top: 104px;
+  h2 {
+    padding-top: 51px;
+    font-weight: 500;
+  }
+  button {
+    margin-top: 40px;
+  }
+}
 
 /* Error404-page */
 
