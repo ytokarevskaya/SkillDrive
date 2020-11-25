@@ -7,11 +7,18 @@ mobileBurger.addEventListener("click", function () {
         el.style.animation = `rect-${i} 1s ease-in-out both`; })
         mobileBurger.classList.toggle('is-active');
         mobileMenu.classList.toggle("is-active");
+        //Воздействие на элементы с позиционированием absolute
+        document.querySelectorAll(".ignore_menu").forEach(el => el.style.opacity = 0.05);
+        document.querySelectorAll(".ignore_menu").forEach(el => el.style.pointerEvents = "none");
     } else {
         document.querySelectorAll(".mobile__burger-rect").forEach((el,i) => {
         el.style.animation = `rect-${i+3} 0.8s ease-out both reverse`; })
         mobileBurger.classList.toggle('is-active');
         mobileMenu.classList.toggle("is-active");
+
+        document.querySelectorAll(".ignore_menu").forEach(el => el.style.opacity = 1);
+        document.querySelectorAll(".ignore_menu").forEach(el => el.style.pointerEvents = "all");
+
     }
 })
 

@@ -278,14 +278,20 @@ h2 {
 /* Main-page */
 
 .heading__container {
+  display: flex;
   display: none;
-  padding-left: 204px;
 
+  img {
+    margin-top: -90px;
+    pointer-events: none;
+  }
   &__registration {
     display: flex;
+    margin-left: 204px;
     flex-direction: column;
+    width: 80%;
     h1 {
-      padding-top: 202px;
+      padding-top: 102px;
     }
     span {
       padding-top: 30px;
@@ -301,6 +307,7 @@ h2 {
 .main-description__container {
   @include standart-container();
   padding-top: 120px;
+  display: none;
 
   &-block {
     display: flex;
@@ -336,14 +343,21 @@ h2 {
   background: $translucent-rect;
   h2 {
     font-weight: 500;
+    
   }
   &-circles {
     display: flex;
     align-items: center;
-
     padding-top: 80px;
+
+    padding-bottom: 64px;
+
     &__block {
       @include standart-container();
+      
+      &:last-child {
+        padding-right: 0px;
+      }
       &-circle {
         display: flex;
         flex-direction: column;
@@ -359,21 +373,23 @@ h2 {
         color: white;
     }
     span {
-      padding-top: 26px;
+      position: absolute;
+      margin-top: 144px;
       font-size: 24px;
-      width: 50%;
+      width: 15%;
       text-align: center;
-      &::after {
-        content: "Выберите автомобиль";
-      }
     }
     }
     &-line {
-      width: 231px;
+      width: 241px;
       border-bottom: 1px dashed #9D9AAC;
+      margin: 0px 1%;
     }
+
   }
 }
+
+
 
 /* Error404-page */
 
