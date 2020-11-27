@@ -305,6 +305,7 @@ h2 {
 
 .main-description__container {
   @include standart-container();
+  display: none;
   padding-top: 120px;
 
 
@@ -378,6 +379,7 @@ h2 {
 
 .rent-rule__container {
   @include standart-container();
+  display: none;
   justify-content: center;
   height: 552px;
   width: 100%;
@@ -389,6 +391,7 @@ h2 {
 
 .profit__container {
   @include standart-container();
+  display: none;
   justify-content: center;
   height: 552px;
   width: 100%;
@@ -415,10 +418,94 @@ h2 {
   h2 {
     font-weight: 500;
   }
+  &-slide__show {
+    display: flex;
+    align-items: center;
+    padding-top: 58px;
+    &-rect {
+      display: flex;
+      flex-direction: column;
+      width: 678px;
+      background: white;
+      border-radius: 8px;
+      padding-top: 30px;
+      transition: all 0.2 ease;
+      .wrapper {
+        display: flex;
+        align-items: center;
+      }
+      img {
+        position: absolute;
+        align-self: start;
+        padding-left: 25px;
+        width: 53px;
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 98px;
+        padding-top: 2px;
+        &-name {
+          font-weight: 700;
+        }
+        &-city {
+          font-size: 14px;
+          padding-top: 4px;
+          color: #636780;
+        }
+        &-monolog {
+          padding: 18px 75px 0 98px;
+          text-align: justify;
+          padding-bottom: 39px;
+          line-height: 23px;
+        }
+      }
+    }
+    .icon-arrow {
+      font-size: 20px;
+      color: $green-rect;
+      height: 20px;
+      cursor: pointer;
+    }
+    .icon-arrow:first-child {
+      transform: rotateZ(90deg);
+      margin-right: 143px;
+    }
+    .icon-arrow:last-child {
+      transform: rotateZ(-90deg);
+      margin-left: 143px;
+    }
+
+  }
+  &-circles {
+    display: flex;
+    padding-top: 42px;
+    align-items: center;
+    cursor: pointer;
+    &-circle {
+      height: 6px;
+      width: 6px;
+      opacity: 0.4;
+      background: #3F3D56;
+      border-radius: 50%;
+      margin-right: 10px;
+      transition: all 0.4s ease;
+      &:hover {
+        height: 10px;
+        width: 10px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.ss-is-active {
+  display: block;
 }
 
 .cta__container {
   @include standart-container();
+  display: none;
   padding-top: 104px;
   h2 {
     padding-top: 51px;
