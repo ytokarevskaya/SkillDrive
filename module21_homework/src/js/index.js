@@ -1,5 +1,7 @@
-import {menuActivation} from './mobileMenu'
-import {collapsibleQuestions} from './collapsibleBlock'
+import '../sass/base.scss';
+
+import {menuActivation} from './mobileMenu';
+import {collapsibleQuestions} from './collapsibleBlock';
 
 function pageLoaded() {
     menuActivation()

@@ -1,18 +1,13 @@
-@import "glyphter.scss", "font-rule.scss";
+@import 'glyphter.scss';
+@import "font-rule.scss";
 @import "breakpoints.scss";
 @import "normalize.scss";
 @import "keyframes.scss";
-@import "header.scss", "footer.scss";
+@import "header.scss";
+@import "footer.scss";
 @import "Page-Error404.scss";
 @import "Page-Questions.scss";
 
-/* generic */
-
-
-
-.is-animated {
-  transition: all 400ms ease;
-}
 
 .description__container {
   @include standart-container();
@@ -166,7 +161,7 @@
 }
 
   /*
-cd /d D:\!SkillDrive\module21_homework
+cd /d D:\SkillDrive\module21_homework
 npm run watch-sass
 
 npm run watch-webpack

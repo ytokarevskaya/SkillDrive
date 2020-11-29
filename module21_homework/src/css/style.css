@@ -824,11 +824,6 @@ nav .navbar__container .navbar__menu-login:hover {
   }
 }
 
-/* generic */
-.is-animated {
-  transition: all 400ms ease;
-}
-
 .description__container {
   display: flex;
   flex-direction: column;
