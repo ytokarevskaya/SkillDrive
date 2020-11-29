@@ -3,26 +3,12 @@
 @import "normalize.scss";
 @import "keyframes.scss";
 @import "header.scss", "footer.scss";
-
-@mixin standart-container () {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@import "Page-Error404.scss";
+@import "Page-Questions.scss";
 
 /* generic */
 
-h1 {
-  @include breakpoint (medium) {
-    font-size: 32px;
-  }   
-}
 
-h2 {
-  @include breakpoint (medium) {
-    font-size: 24px;
-  }   
-}
 
 .is-animated {
   transition: all 400ms ease;
@@ -177,156 +163,6 @@ h2 {
       }
     }
 }
-}
-
-/* Questions-page */
-
-.questions__container {
-  @include standart-container();
-  img {
-    padding-top: 119px;
-    @include breakpoint (medium) {
-      padding-top: 61px;
-      width: 70%;
-    }
-  }
-  h1 {
-    padding-top: 84px;
-    line-height: 10px;
-  }
-  span {
-    font-size: 24px;
-    text-align: center;
-    line-height: 23px;
-    padding-bottom: 60px;
-    padding-top: 30px;
-    @include breakpoint (medium) {
-      font-size: 16px;
-      width: 80%;
-      padding-top: 10px;
-      padding-bottom: 30px;
-
-    }
-  }
-  &-rect {
-    padding-left: 22px;
-    width: 80%;
-    padding-top: 19px;
-    padding-bottom: 15px;
-    background: $questions-grey;
-    margin-bottom: 14px;
-    border: 1px none;
-    border-radius: 8px;
-    cursor: pointer;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    line-height: 20px;
-    font-size: 20px;
-    &.is-active {
-      background: rgba(97, 161, 153, 0.15);
-    }
-    @include breakpoint (medium) {
-      font-size: 14px;
-    }
-    &:last-child {
-      @include breakpoint (medium) {
-        margin-bottom: 0px;
-      }
-    }
-
-    .icon-arrow {
-      padding-right: 28px;
-      padding-left: 5%;
-      color: #A0A7AD;
-      transition: all 0.2s ease-out;
-      &.is-active {
-        transform: rotateX(180deg);
-      }
-    }
-
-  }
-  &-answer {
-    align-self: flex-start;
-    padding-left: calc(10% + 20px);
-    overflow: hidden;
-    max-height: 0;
-    transition: all 0.2s ease-out;
-    font-size: 20px;
-    &.is-active {
-      margin-top: 20px;
-      margin-bottom: 40px;
-      @include breakpoint (medium) {
-        margin-top: 10px;
-        margin-bottom: 30px;
-        padding-left: calc(10% + 10px);
-      }
-    }
-    &:last-child.is-active {
-      margin-bottom: 20px;
-    }
-    @include breakpoint (medium) {
-      width: 60%;
-      font-size: 14px;
-    }
-  }
-
-}
-
-/* Error404-page */
-
-.error404__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img:first-child {
-    align-self: flex-start;
-    padding-top: 31px;
-    padding-left: 40px;
-    @include breakpoint (medium) {
-      padding-top: 20px;
-      padding-left: 20px;
-    }
-  }
-  &-ufo {
-    padding-top: 122px;
-    @include breakpoint (medium) {
-      padding-top: 115px;
-    }
-  }
-  h1 {
-    padding-top: 61px;
-    @include breakpoint (medium) {
-      font-size: 32px;
-      padding-top: 42px;
-    }
-  }
-  span {
-    padding-top: 30px;
-    font-size: 24px;
-    width: 30%;
-    text-align: center;
-    @include breakpoint (medium) {
-      font-size: 16px;
-      min-width: 90%;
-      padding-top: 10px;
-    }
-  }
-  a {
-    width: 100%;
-    text-align: center;
-    button {
-      margin-top: 90px;
-      margin-bottom: 40px;
-      @include breakpoint (medium) {
-        width: 80%;
-        margin-bottom: 20px;
-      }
-    }
-  }
-
 }
 
   /*

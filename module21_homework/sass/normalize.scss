@@ -40,6 +40,18 @@ h2 {
   font-size: 48px;
 }
 
+h1 {
+  @include breakpoint (medium) {
+    font-size: 32px;
+  }   
+}
+
+h2 {
+  @include breakpoint (medium) {
+    font-size: 24px;
+  }   
+}
+
 hr {
   height: 120%;
   margin-top: -1%;
