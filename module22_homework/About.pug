@@ -30,42 +30,22 @@ main
   section.teams
     .teams__container
       h2 &Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&acy;
+
+        mixin teamsItem(name, profession, img)
+          .teams__item
+            img(src='../src/img/about-page/'+img alt=name)
+            .teams__item-name-text
+              span=name 
+              br
+              span=profession
+
       .teams__item-container
-        .teams__item
-          img(src='../src/img/about-page/Team_1.jpg' alt='Иван Иванов, СЕО')
-          .teams__item-name-text
-            span &Icy;&vcy;&acy;&ncy; &Icy;&vcy;&acy;&ncy;&ocy;&vcy;
-            br
-            span &Scy;&IEcy;&Ocy;
-        .teams__item
-          img(src='../src/img/about-page/Team_2.jpg' alt='Алексей Смирнов, Frontend-разработчик')
-          .teams__item-name-text
-            span &Acy;&lcy;&iecy;&kcy;&scy;&iecy;&jcy; &Scy;&mcy;&icy;&rcy;&ncy;&ocy;&vcy;
-            br
-            span Frontend-&rcy;&acy;&zcy;&rcy;&acy;&bcy;&ocy;&tcy;&chcy;&icy;&kcy;
-        .teams__item
-          img(src='../src/img/about-page/Team_3.jpg' alt='Денис Ярцев, Backend-разработчик')
-          .teams__item-name-text
-            span &Dcy;&iecy;&ncy;&icy;&scy; &YAcy;&rcy;&tscy;&iecy;&vcy;
-            br
-            span Backend-&rcy;&acy;&zcy;&rcy;&acy;&bcy;&ocy;&tcy;&chcy;&icy;&kcy;
-        .teams__item
-          img(src='../src/img/about-page/Team_4.jpg' alt='Николай Морозов, Дизайнер')
-          .teams__item-name-text
-            span &Ncy;&icy;&kcy;&ocy;&lcy;&acy;&jcy; &Mcy;&ocy;&rcy;&ocy;&zcy;&ocy;&vcy;
-            br
-            span &Dcy;&icy;&zcy;&acy;&jcy;&ncy;&iecy;&rcy;
-        .teams__item
-          img(src='../src/img/about-page/Team_5.jpg' alt='Ирина Деева, Копирайтер')
-          .teams__item-name-text
-            span &Icy;&rcy;&icy;&ncy;&acy; &Dcy;&iecy;&iecy;&vcy;&acy;
-            br
-            span &Kcy;&ocy;&pcy;&icy;&rcy;&acy;&jcy;&tcy;&iecy;&rcy;
-        .teams__item
-          img(src='../src/img/about-page/Team_6.jpg' alt='Мария Стрелкова, SMM')
-          .teams__item-name-text
-            span &Mcy;&acy;&rcy;&icy;&yacy; &Scy;&tcy;&rcy;&iecy;&lcy;&kcy;&ocy;&vcy;&acy;
-            br
-            span SMM
+        +teamsItem("Иван Иванов","CEO","Team_1.jpg")
+        +teamsItem("Алексей Смирнов","Frontend-разработчик","Team_2.jpg")
+        +teamsItem("Денис Ярцев","Backend-разработчик","Team_3.jpg")
+        +teamsItem("Николай Морозов","Дизайнер","Team_4.jpg")
+        +teamsItem("Ирина Деева","Копирайтер","Team_5.jpg")
+        +teamsItem("Мария Стрелкова","SMM","Team_6.jpg")
+
 include ./footer.pug
 script(src='dist/main.js')
