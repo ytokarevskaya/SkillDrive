@@ -1,5 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
+const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -10,7 +13,20 @@ module.exports = {
         filename: 'main.js',
     },
     mode: 'production',
-    plugins: [new MiniCssExtractPlugin()],
+    watch: true,
+    plugins: [
+        new MiniCssExtractPlugin(),
+        new TerserWebpackPlugin(),
+        new OptimizeCssAssetsWebpackPlugin(),
+        new HtmlWebpackPlugin( {
+            template: "404.pug",
+            filename: "404.html"
+        })
+    ],
+    optimization: {
+        minimize: true,
+        minimizer: [ new TerserWebpackPlugin(), new OptimizeCssAssetsWebpackPlugin() ]
+    },
     module: {
         rules: [
             {
@@ -31,6 +47,13 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ],
+            },
+            {
+                test: /\.pug$/,
+				loader: 'pug-loader',
+				options: {
+                pretty: true
+                }
             }
         ]
     },
