@@ -4,11 +4,11 @@ import {menuActivation} from './mobileMenu';
 import {collapsibleQuestions} from './collapsibleBlock';
 
 function pageLoaded() {
-    menuActivation()
-    collapsibleQuestions()
+    menuActivation();
+    collapsibleQuestions();
 }
 
-document.addEventListener("DOMContentLoaded", pageLoaded)
+document.addEventListener("DOMContentLoaded", pageLoaded);
 
 
 

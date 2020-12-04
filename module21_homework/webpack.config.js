@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -21,6 +22,18 @@ module.exports = {
         new HtmlWebpackPlugin( {
             template: "404.pug",
             filename: "404.html"
+        }),
+        new HtmlWebpackPlugin( {
+            template: "Questions.pug",
+            filename: "Questions.html"
+        }),
+        new HtmlWebpackPlugin( {
+            template: "About.pug",
+            filename: "About.html"
+        }),
+        new HtmlWebpackPlugin( {
+            template: "Main.pug",
+            filename: "Main.html"
         })
     ],
     optimization: {
@@ -54,6 +67,11 @@ module.exports = {
 				options: {
                 pretty: true
                 }
+            },
+            {
+                test: /\.js$/,
+                exclude: '/node_modules/',
+                use: 'eslint-loader'
             }
         ]
     },

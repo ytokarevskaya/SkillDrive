@@ -8,12 +8,14 @@
     "watch-sass": "sass --watch src/sass/base.scss:src/css/style.css",
     "compile-sass": "sass src/sass/base.scss src/css/style.css",
     "watch-webpack": "npx webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "npx eslint src/js/index.js"
   },
   "author": "g275691",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.14.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.21.5",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
@@ -23,6 +25,9 @@
     "pug-loader": "^2.4.0",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-webpack-plugin": "^2.1.1",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"

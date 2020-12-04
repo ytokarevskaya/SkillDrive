@@ -15,6 +15,6 @@ export function collapsibleQuestions () {
                 arrowsQuestions[i].classList.remove("is-active");
             }
             answers[i].classList.toggle("is-active");
-        })
+        });
     });
 }
