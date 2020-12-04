@@ -33,6 +33,7 @@
       @include breakpoint (medium) {
         margin-left: 0;
         padding-top: 16px;
+        padding-right: 19px;
       }
       &:hover {
         @include hoverSocMedia();
