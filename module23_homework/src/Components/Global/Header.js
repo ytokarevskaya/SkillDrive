@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import logo from '../img/logo.svg';
+import logo from '../../img/logo.svg';
 import HeaderMobile from './HeaderMobile';
 import BurgerMenu from './BurgerMenu';
 import { Link, BrowserRouter as Router, Route } from 'react-router-dom';

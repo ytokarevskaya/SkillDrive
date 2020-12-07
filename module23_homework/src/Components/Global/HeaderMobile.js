@@ -1,5 +1,5 @@
 import React from 'react';
-import logoMobile from '../img/logo.svg';
+import logoMobile from '../../img/logo.svg';
 import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 
 const HeaderMobile = () => (

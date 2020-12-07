@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react';
-import Header from './header';
+import Header from '../global/header';
 
 const App = () => (
-  <Header />
+  <Fragment>
+    <Header />
+
+  </Fragment>
 )
 
 export default App;
