@@ -8,15 +8,17 @@ const Header = () => (
     <Fragment>
         <header>
             <nav>
-                <div class="navbar__container">
+                <div className="navbar__container">
                     <a href="main.html" target="_blank" rel="nofollow">
-                        <img src={ logo } class="navbar__brand-text" alt="logo"></img>
+                        <img src={ logo } className="navbar__brand-text" alt="logo" />
                     </a>
-                    <div class="navbar__menu is-desktop">
-                        <a class="navbar__menu-item is-animated" href="About.html" target="_blank" rel="nofollow">О нас</a>
-                        <a class="navbar__menu-item is-animated" href="https://www.google.com/" target="_blank" rel="nofollow">Условия</a>
-                        <a class="navbar__menu-item is-animated" href="Questions.html" target="_blank" rel="nofollow">Частые вопросы</a>
-                        <a class="navbar__menu-login is-animated" href="" target="_blank" rel="nofollow">Войти</a>
+                    <div className="navbar__menu is-desktop">
+                        <Router>
+                            <a className="navbar__menu-item is-animated" href="https://www.google.com/" target="_blank" rel="nofollow">Условия</a>
+                            <a className="navbar__menu-item is-animated" href="Questions.html" target="_blank" rel="nofollow">Частые вопросы</a>
+                            <a className="navbar__menu-login is-animated" href="" target="_blank" rel="nofollow">Войти</a>
+                        </Router>
+
                     </div>
                 </div>
             </nav>
@@ -27,3 +29,4 @@ const Header = () => (
 );
 
 export default Header;
+
