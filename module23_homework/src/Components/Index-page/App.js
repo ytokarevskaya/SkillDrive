@@ -14,12 +14,7 @@ const App = () => (
             <img src={womanImg} alt="Woman with questions" />
             <h1>Частые вопросы</h1>
             <span>Отвечаем на вопросы, которые у вас могут возникнуть.</span>
-            <CollideBlock question="Могу ли я отменить бронь?"/>
-            <CollideBlock question="Могу ли я вернуть деньги, если не подошёл автомобиль?"/>
-            <CollideBlock question="Что делать, если случилось ДТП?"/>
-            <CollideBlock question="Могу ли я оставить автомобиль в удобном для меня месте?"/>
-            <CollideBlock question="Что делать, если собственник просит заплатить ему напрямую?"/>
-            <CollideBlock question="Должен ли я заправлять автомобиль?"/>
+            <CollideBlock />
         </div>
     </main>
   <Footer />
