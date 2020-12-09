@@ -9,14 +9,5 @@
 @import "../components/index-page/descrContacts.scss";
 @import "../components/index-page/Team.scss";
 /*Questions-page*/
-@import "Page-Questions.scss";
+@import "../components/questions-page/Questions.scss";
 @import "Page-Error404.scss";
-
-
-  /*
-cd /d D:\SkillDrive\module21_homework
-npm run watch-sass
-
-npm run watch-webpack
-
-*/

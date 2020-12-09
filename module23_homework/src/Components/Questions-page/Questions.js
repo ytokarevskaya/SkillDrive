@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import womanImg from '../../img/Question-woman.svg';
-import {CollideBlock, answerDefault} from './CollideBlock';
+import Header from '../global/header';
+import Footer from '../global/Footer';
+import CollideBlock from './CollideBlock';
 
 const Questions = () => (
     <Fragment>
@@ -10,6 +12,7 @@ const Questions = () => (
                 <img src={womanImg} alt="Woman with questions" />
                 <h1>Частые вопросы</h1>
                 <span>Отвечаем на вопросы, которые у вас могут возникнуть.</span>
+                <CollideBlock />
             </div>
         </main>
       <Footer />

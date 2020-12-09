@@ -1,6 +1,6 @@
-const rectsQuestions = document.querySelectorAll(".questions__container-rect"),
-    answers = document.querySelectorAll(".questions__container-answer"),
-    arrowsQuestions = document.querySelectorAll(".icon-arrow");
+const rectsQuestions = document.querySelectorAll(".questions__container-rect"), //серые прямоугольники
+    answers = document.querySelectorAll(".questions__container-answer"), //появляющиеся ответы
+    arrowsQuestions = document.querySelectorAll(".icon-arrow"); //переворачивающиеся стрелочки
 
 export function collapsibleQuestions () {
     rectsQuestions.forEach((el, i) => {
