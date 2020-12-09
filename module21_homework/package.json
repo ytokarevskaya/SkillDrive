@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-sass": "sass --watch src/sass/base.scss:src/css/style.css",
     "compile-sass": "sass src/sass/base.scss src/css/style.css",
-    "watch-webpack": "npx webpack --watch",
+    "watch-webpack": "npx webpack --watch --open",
     "build": "webpack",
     "lint": "npx eslint src/js/index.js"
   },

@@ -44,6 +44,9 @@
   
       line-height: 20px;
       font-size: 20px;
+      div {
+        pointer-events: none;
+      }
       &.is-active {
         background: rgba(97, 161, 153, 0.15);
       }
@@ -75,6 +78,7 @@
       transition: all 0.2s ease-out;
       font-size: 20px;
       &.is-active {
+        overflow: none;
         margin-top: 20px;
         margin-bottom: 40px;
         @include breakpoint (medium) {
