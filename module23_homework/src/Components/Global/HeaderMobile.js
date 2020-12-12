@@ -1,9 +1,8 @@
 import React from 'react';
 import logoMobile from '../../img/logo.svg';
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 
 const HeaderMobile = () => (
-    <div className="mobile__wrapper is-mobile is-active is-animated">
+    <div className="mobile__wrapper is-mobile is-animated is-active">
         <img src={ logoMobile } className="navbar__brand-mobil" alt="logo" />
         <div className="menu__mobile-container">
             <nav className="menu__mobile">
