@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import womanImg from '../../img/Question-woman.svg';
 import Header from '../global/header';
 import Footer from '../global/Footer';
-import CollapsibleBlock from './CollapsibleBlock';
+import CollapsibleBlockAll from './CollapsibleBlockAll';
 
 const Questions = () => (
     <Fragment>
@@ -12,8 +12,8 @@ const Questions = () => (
                 <img src={womanImg} alt="Woman with questions" />
                 <h1>Частые вопросы</h1>
                 <span>Отвечаем на вопросы, которые у вас могут возникнуть.</span>
-                <CollapsibleBlock />
-            </div>
+                <CollapsibleBlockAll />
+            </div>                
         </main>
       <Footer />
     </Fragment>
