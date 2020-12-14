@@ -5,16 +5,88 @@
 @import "keyframes.scss";
 @import "../components/Global/Header.scss";
 @import "../components/Global/footer.scss";
+/*Home-page*/
+//@import "../components/Home-page/heading.scss";
+@import "../components/Home-page/heading.scss";
+@import "../components/Home-page/description.scss";
+@import "../components/Home-page/rentRule.scss";
+@import "../components/Home-page/profit.scss";
+@import "../components/Home-page/review.scss";
+@import "../components/Home-page/cta.scss";
 /*About-page*/
 @import "../components/about-page/descrContacts.scss";
 @import "../components/about-page/Team.scss";
 /*Questions-page*/
 @import "../components/questions-page/Questions.scss";
 @import "../components/global/Page404.scss";
-/*Home-page*/
-@import "../components/home-page/heading.scss";
-@import "../components/home-page/description.scss";
-@import "../components/home-page/rentRule.scss";
-@import "../components/home-page/profit.scss";
-@import "../components/home-page/review.scss";
-@import "../components/home-page/cta.scss";
+
+html {
+    overflow-x: hidden;
+}
+
+.heading__container {
+    display: flex;
+    flex-direction: column;
+    height: 730px;
+    img {
+      pointer-events: none;
+      order: 2;
+      &:nth-child(2) {
+        position: absolute;
+        align-self: flex-end;
+
+        @include breakpoint (medium) {
+            display: none;
+        }
+      }
+      &:nth-child(3) {
+        order: 1;
+      }
+    }
+
+    &__registration {
+      display: flex;
+      margin-left: 10%;
+      flex-direction: column;
+      width: 50%;
+      order: 1;
+      @include breakpoint (medium) {
+        order: 2;
+        width: 100%;
+      }
+      h1 {
+        padding-top: 102px;
+        @include breakpoint (medium) {
+            padding-top: 20px;
+            width: 90%;
+          }
+      }
+      span {
+        padding-top: 30px;
+        font-size: 24px;
+        @include breakpoint (medium) {
+            font-size: 16px;
+            padding-top: 17px;
+        }
+      }
+      a {
+          
+        button {
+            margin-top: 40px;
+    
+            @include breakpoint (medium) {
+                margin-top: 25px;
+                width: 90%;
+            }
+          }
+      }
+
+      @include breakpoint (medium) {
+        margin-left: 10%;
+        width: 90%;
+      }
+    }
+    @include breakpoint (medium) {
+        flex-direction: column;
+    }
+  }

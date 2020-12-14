@@ -4,10 +4,11 @@ import HeaderMobile from './HeaderMobile';
 import BurgerMenu from './BurgerMenu';
 import { Link } from 'react-router-dom';
 
-const Header = () => (
+const Header = ({isMain = ""}) => {
+    return (
     <Fragment>
         <header>
-            <nav>
+            <nav className ={isMain != "" ? "is-main" : ""}>
                 <div className="navbar__container">
                     <Link to="/" rel="nofollow">
                         <img src={ logo } className="navbar__brand-text" alt="logo"/>
@@ -17,7 +18,6 @@ const Header = () => (
                             <a className="navbar__menu-item is-animated" target="_blank" rel="nofollow">Условия</a>
                             <Link to="/questions" className="navbar__menu-item is-animated" rel="nofollow">Частые вопросы</Link>
                             <a className="navbar__menu-login is-animated" href="" target="_blank" rel="nofollow">Войти</a>
-
                     </div>
                 </div>
             </nav>
@@ -25,7 +25,8 @@ const Header = () => (
             <BurgerMenu />
         </header>
     </Fragment>
-);
+    )
+};
 
 export default Header;
 

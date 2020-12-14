@@ -11,7 +11,7 @@ import Cta from './Cta';
 
 const Home = () => (
     <Fragment>
-        <Header />
+        <Header isMain="something"/>
         <Heading />
         <Description />
         <RentRule />

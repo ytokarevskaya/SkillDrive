@@ -1,5 +1,6 @@
 .review__container {
     @include standart-container();
+    display: none;
     height: 599px;
     background: $translucent-rect;
     padding-top: 110px;
