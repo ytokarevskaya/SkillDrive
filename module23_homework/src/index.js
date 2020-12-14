@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {BrowserRouter} from 'react-router-dom';
 import './styles/base.scss';
-import App from "./components/index-page/App";
-import Questions from "./components/Questions-page/Questions";
+import App from "./Components/app";
 
-ReactDOM.render(<Questions />, document.getElementById("root"));
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>, 
+document.getElementById("root"));

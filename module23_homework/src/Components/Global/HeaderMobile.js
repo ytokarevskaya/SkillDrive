@@ -1,20 +1,29 @@
 import React from 'react';
 import logoMobile from '../../img/logo.svg';
+import { Link } from 'react-router-dom';
 
-const HeaderMobile = () => (
+const HeaderMobile = () => {
+    let [burger, animateBurger] = React.useState(false);
+    const handleClick = () => {
+        document.querySelector(".mobile__wrapper").classList.toggle("is-active");
+        burger ? animateBurger(burger = false) : animateBurger(burger = true);  
+    };
+
+    return (
     <div className="mobile__wrapper is-mobile is-animated is-active">
-        <img src={ logoMobile } className="navbar__brand-mobil" alt="logo" />
+        <Link to="/" rel="nofollow">
+            <img src={ logoMobile } className="navbar__brand-mobil" alt="logo" />
+        </Link>
         <div className="menu__mobile-container">
             <nav className="menu__mobile">
-                <a href="About.html" className="menu__mobile-link is-animated">О нас</a>
-                <div className="menu__mobile-rect"></div>
+                <Link to="/about" className="menu__mobile-link is-animated" rel="nofollow">О нас</Link>
                 <a href="" className="menu__mobile-link is-animated">Условия</a>
-                <div className="menu__mobile-rect"></div>
-                <a href="Questions.html" className="menu__mobile-link is-animated">Частые вопросы</a>
+                <Link to="/questions" className="menu__mobile-link is-animated" rel="nofollow">Частые вопросы</Link>
             </nav>
             <a className="menu__login is-animated" href="" target="_blank" rel="nofollow">Войти</a>
         </div>
     </div>
-)
+    )
+}
 
 export default HeaderMobile;

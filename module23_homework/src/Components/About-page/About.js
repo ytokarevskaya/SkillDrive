@@ -4,7 +4,7 @@ import Footer from '../global/Footer';
 import DescrContacts from './DescrContacts';
 import Team from './Team';
 
-const App = () => (
+const About = () => (
   <Fragment>
     <Header />
     <DescrContacts />
@@ -13,4 +13,4 @@ const App = () => (
   </Fragment>
 )
 
-export default App;
+export default About;

@@ -6,8 +6,8 @@
 @import "../components/Global/Header.scss";
 @import "../components/Global/footer.scss";
 /*About-page*/
-@import "../components/index-page/descrContacts.scss";
-@import "../components/index-page/Team.scss";
+@import "../components/about-page/descrContacts.scss";
+@import "../components/about-page/Team.scss";
 /*Questions-page*/
 @import "../components/questions-page/Questions.scss";
-@import "Page-Error404.scss";
+@import "../components/global/Page404.scss";
