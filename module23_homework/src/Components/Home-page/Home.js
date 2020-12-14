@@ -8,7 +8,6 @@ import Profit from './Profit';
 import Review from './Review';
 import Cta from './Cta';
 
-
 const Home = () => (
     <Fragment>
         <Header isMain="something"/>
@@ -16,7 +15,7 @@ const Home = () => (
         <Description />
         <RentRule />
         <Profit />
-        <Review />
+        {/* <Review /> */}
         <Cta />
         <Footer />
   </Fragment>
