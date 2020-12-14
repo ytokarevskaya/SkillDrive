@@ -1,0 +1,31 @@
+.main-description__container {
+    @include standart-container();
+    display: none;
+    padding-top: 120px;
+  
+  
+    &-block {
+      display: flex;
+      padding-bottom: 160px;
+      align-items: center;
+      padding-right: 12%;
+      padding-left: 12%;
+      img {
+        padding-right: 78px;
+      }
+      img:nth-child(2) {
+        padding-left: 78px;
+      }
+      &-text {
+        h2 {
+          line-height: 58px;
+          font-weight: 500;
+        }
+        span {
+          display: block;
+          padding-top: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }

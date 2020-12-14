@@ -1,0 +1,25 @@
+.heading__container {
+    display: flex;
+  
+    img {
+      margin-top: -90px;
+      pointer-events: none;
+    }
+    &__registration {
+      display: flex;
+      margin-left: 204px;
+      flex-direction: column;
+      width: 80%;
+      h1 {
+        padding-top: 102px;
+      }
+      span {
+        padding-top: 30px;
+        font-size: 24px;
+        width: 80%;
+      }
+      button {
+        margin-top: 40px;
+      }
+    }
+  }

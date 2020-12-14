@@ -1,0 +1,53 @@
+.circles__container {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    
+    &-line {
+      width: 241px;
+      border-bottom: 1px dashed #9D9AAC;
+      margin: 0px 1%;
+    }
+  
+    &-wrapper {
+      @include standart-container();
+      
+      &:last-child {
+        padding-right: 0px;
+      }
+      &-circle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 108px;
+        width: 108px;
+        background: $green-rect;
+        border-radius: 50%;
+  
+        font-weight: 900;
+        font-size: 48px;
+        color: white;
+    }
+    span {
+      position: absolute;
+      margin-top: 144px;
+      font-size: 24px;
+      width: 14%;
+      text-align: center;
+    }
+    }
+  }
+  
+  .rent-rule__container {
+    @include standart-container();
+    display: none;
+    justify-content: center;
+    height: 552px;
+    width: 100%;
+    background: $translucent-rect;
+    h2 {
+      font-weight: 500;
+    }
+  }

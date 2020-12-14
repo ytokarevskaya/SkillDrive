@@ -1,0 +1,12 @@
+.cta__container {
+    @include standart-container();
+    display: none;
+    padding-top: 104px;
+    h2 {
+      padding-top: 51px;
+      font-weight: 500;
+    }
+    button {
+      margin-top: 40px;
+    }
+  }
