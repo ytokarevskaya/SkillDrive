@@ -1,18 +1,10 @@
 import React from 'react';
+import DescriptionBlock from './DescriptionBlock';
 import car2 from '../../img/home-page/car2.svg';
 import car3 from '../../img/home-page/car3.svg';
 import car4 from '../../img/home-page/car4.svg';
 
 const Description = () => {
-    let DescriptionBlock = ({h, img, alt, span}) => (
-        <div class="main-description__container-block">
-        <img src={ img } alt={ alt } />
-        <div class="main-description__container-block-text">
-            <h2>{ h }</h2>
-            <span>{ span }</span>
-        </div>
-    </div>
-    )
 
     return (
     <section class="main-description">

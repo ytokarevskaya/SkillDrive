@@ -5,90 +5,32 @@
     @include breakpoint (medium) {
       height: 397px;
       align-items: flex-start;
-      margin-left: 10%;
-    }
-    @include breakpoint (small) {
-      margin-left: 20px;
     }
     h2 {
       font-weight: 500;
       margin-top: 110px;
       @include breakpoint (medium) {
         margin-top: 40px;
+        margin-left: 10%;
+      }
+      @include breakpoint (small) {
+        margin-left: 20px;
       }
     }
-    span {
+    &-text {
       margin-top: 21px;
       font-size: 24px;
       @include breakpoint (medium) {
         font-size: 14px;
+        margin-top: 15px;
+        margin-left: 10%;
+        max-width: 90%;
+      }
+      @include breakpoint (small) {
+        margin-left: 20px;
         margin-top: 10px;
       }
     }
   }
 
-  .circles__container {
-    display: flex;
-    align-items: center;
-    margin-top: 80px;
-    @include breakpoint (medium) {
-        flex-direction: column;
-        margin-top: 30px;
-    }
-    
-    &-line {
-      width: 149px;
-      border-bottom: 1px dashed #9D9AAC;
-      margin: 0px 1%;
-      @include breakpoint (medium) {
-        width: 20px;
-        transform: rotateZ(90deg);
-        margin-top: 13px;
-        margin-bottom: 13px;
-      }
-    }
-  
-    &-wrapper {
-      @include standart-container();
-      @include breakpoint (medium) {
-      }
-      &-circle {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        height: 108px;
-        width: 108px;
-        background: $green-rect;
-        border-radius: 50%;
-        font-size: 36px;
-        color: white;
-        div {
-          margin-top: 5%;
-        }
-        @include breakpoint (medium) {
-          height: 32px;
-          width: 32px;
-          font-size: 14px;
-        }
-    }
-    span {
-      position: absolute;
-      margin-top: 144px;
-      width: 16%;
-      text-align: center;
-      @include breakpoint (superLarge) {
-        width: 12%;
-      }
-      @include breakpoint (medium) {
-        margin-top: 6px;
-        font-size: 14px;
-        width: 40%;
-        align-self: flex-start;
-      }
-      @include breakpoint (small) {
-        width: 75%;
-      }
-    }
-    }
-  }
+ 

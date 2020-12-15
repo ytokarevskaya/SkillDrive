@@ -1,41 +1,24 @@
 import React from 'react';
+import CirclesBlock from './CirclesBlock';
 
-const Profit = () => (
+const Profit = () => {
+
+    return (
     <section class="profit">
         <div class="profit__container">
             <h2>У вас есть автомобиль?</h2>
-            <span>Чтобы он не простаивал — сдавайте его в аренду и зарабатывайте.</span>
+            <span class="profit__container-text">Чтобы он не простаивал — сдавайте его в аренду и зарабатывайте.</span>
             <div class="circles__container">
-                <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">
-                        <div className="icon-Profit1"></div>
-                    </div>
-                    <span class="circles__container-wrapper-arg">Вы сами указываете цену</span>
-                </div>
-                <div class="circles__container-line"></div>
-                <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">
-                        <div className="icon-Profit2"></div>
-                    </div>
-                    <span class="circles__container-wrapper-arg">Мы страхуем автомобили</span>
-                </div>
-                <div class="circles__container-line"></div>
-                <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">
-                        <div className="icon-Profit3"></div>
-                    </div>
-                    <span class="circles__container-wrapper-arg">Наша комиссия всего 3%</span>
-                </div>
-                <div class="circles__container-line"></div>
-                <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">
-                        <div className="icon-Profit4"></div>
-                    </div>
-                    <span class="circles__container-wrapper-arg">Выплаты каждую неделю</span>
-                </div>
+
+                <CirclesBlock span="Вы сами указываете цену" isIcon="icon-Profit1" needLine/>
+                <CirclesBlock span="Мы страхуем автомобили" isIcon="icon-Profit2" needLine/>
+                <CirclesBlock span="Наша комиссия всего 3%" isIcon="icon-Profit3" needLine/>
+                <CirclesBlock span="Выплаты каждую неделю" isIcon="icon-Profit4"/>
+
             </div>
         </div>
     </section>
-)
+    )
+}
 
 export default Profit;
