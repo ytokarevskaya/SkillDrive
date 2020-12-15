@@ -4,7 +4,7 @@ import HeaderMobile from './HeaderMobile';
 import BurgerMenu from './BurgerMenu';
 import { Link } from 'react-router-dom';
 
-const Header = ({isMain = ""}) => {
+const Header = ({isMain}) => {
     return (
     <Fragment>
         <header>

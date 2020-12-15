@@ -20,7 +20,8 @@ const Review = () => {
                 <div class="icon-arrow" onClick={()=> count!=3 ? setCount(count = count + 1) : setCount(count = 0)}/>
             </div>
             <div className="review__container__circles">
-                    {[0,1,2,3].map(el => { return <div className="review__container__circles-item" onMouseEnter={()=> setCount(count = el)}/> })}
+                {[0,1,2,3].map(el => { return <div className={count == el ? "review__container__circles-item is-active" : "review__container__circles-item"} 
+                onMouseEnter={()=> setCount(count = el)}/> })}
             </div>
             <img src={test} style={{display: "none"}}/>
         </div>

@@ -1,6 +1,5 @@
 .profit__container {
     @include standart-container();
-
     height: 618px;
 
     @include breakpoint (medium) {
