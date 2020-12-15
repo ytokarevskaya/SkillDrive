@@ -1,6 +1,6 @@
 @mixin breakpoint($point) {
   @if $point == superLarge {
-    @media screen and (min-width: 1800px) {
+    @media screen and (min-width: 1824px) {
       @content;
     }
   }

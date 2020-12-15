@@ -7,23 +7,31 @@ const Profit = () => (
             <span>Чтобы он не простаивал — сдавайте его в аренду и зарабатывайте.</span>
             <div class="circles__container">
                 <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">1</div>
-                    <span class="ignore_menu">Вы сами указываете цену</span>
+                    <div class="circles__container-wrapper-circle">
+                        <div className="icon-Profit1"></div>
+                    </div>
+                    <span class="circles__container-wrapper-arg">Вы сами указываете цену</span>
                 </div>
                 <div class="circles__container-line"></div>
                 <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">2</div>
-                    <span class="ignore_menu">Мы страхуем автомобили</span>
+                    <div class="circles__container-wrapper-circle">
+                        <div className="icon-Profit2"></div>
+                    </div>
+                    <span class="circles__container-wrapper-arg">Мы страхуем автомобили</span>
                 </div>
                 <div class="circles__container-line"></div>
                 <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">3</div>
-                    <span class="ignore_menu">Наша комиссия всего 3%</span>
+                    <div class="circles__container-wrapper-circle">
+                        <div className="icon-Profit3"></div>
+                    </div>
+                    <span class="circles__container-wrapper-arg">Наша комиссия всего 3%</span>
                 </div>
                 <div class="circles__container-line"></div>
                 <div class="circles__container-wrapper">
-                    <div class="circles__container-wrapper-circle">4</div>
-                    <span class="ignore_menu">Выплаты каждую неделю</span>
+                    <div class="circles__container-wrapper-circle">
+                        <div className="icon-Profit4"></div>
+                    </div>
+                    <span class="circles__container-wrapper-arg">Выплаты каждую неделю</span>
                 </div>
             </div>
         </div>

@@ -1,20 +1,79 @@
 .profit__container {
     @include standart-container();
-    display: none;
-    justify-content: center;
-    height: 552px;
-    width: 100%;
-    padding-bottom: 3%;
-    
+    height: 618px;
+    background: grey;
+    @include breakpoint (medium) {
+      height: 397px;
+      align-items: flex-start;
+    }
     h2 {
       font-weight: 500;
-  
+      margin-top: 110px;
+      @include breakpoint (medium) {
+        margin-top: 40px;
+      }
     }
     span {
-      padding-top: 21px;
+      margin-top: 21px;
       font-size: 24px;
+      @include breakpoint (medium) {
+        font-size: 14px;
+        margin-top: 10px;
+      }
     }
-    .circles__container-line {
-      width: 139px;
+  }
+
+  .circles__container {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    @include breakpoint (medium) {
+      transform: rotateZ(-90deg);
+      
+    }
+    
+    &-line {
+      width: 149px;
+      border-bottom: 1px dashed #9D9AAC;
+      margin: 0px 1%;
+      @include breakpoint (medium) {
+        width: 20px;
+      }
+    }
+  
+    &-wrapper {
+      @include standart-container();
+      
+      &-circle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 108px;
+        width: 108px;
+        background: $green-rect;
+        border-radius: 50%;
+        font-size: 36px;
+        color: white;
+        @include breakpoint (medium) {
+          height: 32px;
+          width: 32px;
+          font-size: 14px;
+          transform: rotateZ(90deg);
+        }
+    }
+    span {
+      position: absolute;
+      margin-top: 144px;
+      width: 16%;
+      text-align: center;
+      @include breakpoint (medium) {
+        margin-top: 17px;
+        font-size: 14px;
+        transform: rotateZ(90deg);
+        width: 100%;
+        margin-top: 161px;
+      }
+    }
     }
   }
