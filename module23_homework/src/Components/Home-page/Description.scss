@@ -1,5 +1,6 @@
 .main-description__container {
   @include standart-container();
+
   padding-top: 120px;
 
   &-block {
@@ -67,5 +68,8 @@
   }
   @include breakpoint (medium) {
       padding-top: 60px;
+  }
+  @include breakpoint (small) {
+    padding-top: 90px;
   }
 }

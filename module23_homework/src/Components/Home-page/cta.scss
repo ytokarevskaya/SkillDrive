@@ -1,12 +1,36 @@
 .cta__container {
     @include standart-container();
-    display: none;
-    padding-top: 104px;
-    h2 {
-      padding-top: 51px;
-      font-weight: 500;
+    margin-top: 104px;
+    @include breakpoint (medium) {
+      justify-content: flex-start;
     }
-    button {
-      margin-top: 40px;
+    img {
+      @include breakpoint (medium) {
+        width: 50%;
+        margin-top: 1px;
+      }
+    }
+    h2 {
+      margin-top: 51px;
+      font-weight: 500;
+      @include breakpoint (medium) {
+        width: 70%;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+    a {
+      @include breakpoint (medium) {
+        display: flex;
+        justify-content: center;
+
+      }
+      button {
+        margin-top: 40px;
+        @include breakpoint (medium) {
+          margin-top: 30px;
+        }
+    }
+
     }
   }

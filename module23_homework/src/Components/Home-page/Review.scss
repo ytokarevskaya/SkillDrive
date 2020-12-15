@@ -1,53 +1,88 @@
 .review__container {
     @include standart-container();
-    display: none;
     height: 599px;
     background: $translucent-rect;
-    padding-top: 110px;
+    @include breakpoint (medium) {
+      height: 403px;
+    }
     h2 {
       font-weight: 500;
+      margin-top: 110px;
+      @include breakpoint (medium) {
+        align-self: flex-start;
+        margin-left: 10%;
+        margin-top: 40px;
+      }
+      @include breakpoint (small) {
+        margin-left: 20px;
+      }
     }
-    &-slide__show {
+    .slide__show {
       display: flex;
       align-items: center;
-      padding-top: 58px;
+      margin-top: 58px;
+      @include breakpoint (medium) {
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 30px;
+      }
+      @include breakpoint (small) {
+        width: 100%;
+      }
       &-rect {
-        display: flex;
-        flex-direction: column;
         width: 678px;
+        height: 233px;
         background: white;
         border-radius: 8px;
-        padding-top: 30px;
         transition: all 0.2 ease;
+        @include breakpoint (medium) {
+          margin-left: 10%;
+          width: 668px;
+        }
+        @include breakpoint (small) {
+          width: 335px;
+          max-width: 90%;
+          margin-left: 20px;
+        }
         .wrapper {
-          display: flex;
-          align-items: center;
+          display: flex;          
+          margin-left: 25px;
+          margin-top: 30px;
+          @include breakpoint (medium) {
+            
+          }
+          @include breakpoint (small) {
+            margin-top: 20px;
+          }
+          img {
+            align-self: flex-start;
+          }
+          &__text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            margin-top: 1%;
+              &-name {
+                font-weight: 700;
+              }
+              &-city {
+                font-size: 14px;
+                margin-top: 4px;
+                color: #636780;
+              }
+              &-monolog {
+                margin-top: 18px;
+                line-height: 23px;
+                padding-right: 75px;
+                @include breakpoint (small) {
+                  font-size: 12px;
+                  padding-right: 20px;
+                  margin-left: -73px;
+                  line-height: 20px;
+                  margin-top: 10%;
+                }
+              }
         }
-        img {
-          position: absolute;
-          align-self: start;
-          padding-left: 25px;
-          width: 53px;
-        }
-        &-text {
-          display: flex;
-          flex-direction: column;
-          padding-left: 98px;
-          padding-top: 2px;
-          &-name {
-            font-weight: 700;
-          }
-          &-city {
-            font-size: 14px;
-            padding-top: 4px;
-            color: #636780;
-          }
-          &-monolog {
-            padding: 18px 75px 0 98px;
-            text-align: justify;
-            padding-bottom: 39px;
-            line-height: 23px;
-          }
         }
       }
       .icon-arrow {
@@ -55,23 +90,28 @@
         color: $green-rect;
         height: 20px;
         cursor: pointer;
+        @include breakpoint (medium) {
+          display: none;
+        }
       }
       .icon-arrow:first-child {
         transform: rotateZ(90deg);
         margin-right: 143px;
       }
-      .icon-arrow:last-child {
+      .icon-arrow:nth-child(3) {
         transform: rotateZ(-90deg);
         margin-left: 143px;
       }
-  
     }
-    &-circles {
+    &__circles {
       display: flex;
-      padding-top: 42px;
+      margin-top: 42px;
       align-items: center;
       cursor: pointer;
-      &-circle {
+      @include breakpoint (medium) {
+        margin-top: 30px;
+      }
+      &-item {
         height: 6px;
         width: 6px;
         opacity: 0.4;
@@ -86,8 +126,4 @@
         }
       }
     }
-  }
-
-  .ss-is-active {
-    display: block;
   }

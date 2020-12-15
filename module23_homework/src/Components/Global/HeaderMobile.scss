@@ -13,6 +13,7 @@
       pointer-events: none;
       opacity: 0;
     }
+
   }
   
   .navbar__brand-mobil {
@@ -37,6 +38,12 @@
     &-link {
       cursor: pointer;
       color: black;
+      @include breakpoint (medium) {
+        font-size: 24px;
+      }
+      @include breakpoint (small) {
+        font-size: 16px;
+      }
     }
     &-rect {
       background: #DCE0ED;
