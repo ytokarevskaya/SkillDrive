@@ -1,38 +1,14 @@
-let slideShowCount = 1;
-let arrReviewImg = document.querySelector(".review__container").querySelectorAll("img");
+import React, { Fragment } from 'react';
 
-document.querySelector(".review__container").querySelectorAll(".icon-arrow")[0]
-.addEventListener("click", function () {
-    slideShowCount > 0 ? slideShowCount -= 1 : slideShowCount = 3;
-    document.querySelector(".review__container-slide__show-rect").innerHTML =
-    `<div class="wrapper">
-    <img src="${reviewImg[slideShowCount]}" alt="Client's portrait">
-    <div class="review__container-slide__show-rect-text">
-        <span class="review__container-slide__show-rect-text-name">${reviewName[slideShowCount]}</span>
-        <span class="review__container-slide__show-rect-text-city">${reviewCity[slideShowCount]}</span>
-    </div>
-</div>
-<span class="review__container-slide__show-rect-text-monolog">${reviewMonolog[slideShowCount]}</span>`
-})
-
-document.querySelector(".review__container").querySelectorAll(".icon-arrow")[1]
-.addEventListener("click", function () {
-    slideShowCount < 3 ? slideShowCount += 1 : slideShowCount = 0;
-    arrReviewImg.forEach(el => { el.classList.remove("is-active"); });
-    arrReviewImg[slideShowCount].classList.add("is-active");
-})
-
-document.querySelectorAll(".review__container-circles-circle").forEach((el,i) => {
-    el.addEventListener("click", function () {
-        slideShowCount = i;
-        document.querySelector(".review__container-slide__show-rect").innerHTML =
-        `<div class="wrapper">
-        <img src="${reviewImg[i]}" alt="Client's portrait">
-        <div class="review__container-slide__show-rect-text">
-            <span class="review__container-slide__show-rect-text-name">${reviewName[i]}</span>
-            <span class="review__container-slide__show-rect-text-city">${reviewCity[i]}</span>
+const ReviewSlideShow = ({img, name, city, monolog}) => (
+    <Fragment>
+        <img src={img} alt="Client's portrait" />
+        <div class="wrapper__text">
+            <span class="wrapper__text-name">{name}</span>
+            <span class="wrapper__text-city">{city}</span>
+            <span class="wrapper__text-monolog">{monolog}</span>
         </div>
-    </div>
-    <span class="review__container-slide__show-rect-text-monolog">${reviewMonolog[i]}</span>`
-    })
-})
+    </Fragment>
+)
+
+export default ReviewSlideShow;

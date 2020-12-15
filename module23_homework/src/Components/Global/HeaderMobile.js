@@ -17,7 +17,7 @@ const HeaderMobile = () => {
         <div className="menu__mobile-container">
             <nav className="menu__mobile">
                 <Link to="/about" className="menu__mobile-link is-animated" rel="nofollow">О нас</Link>
-                <a href="" className="menu__mobile-link is-animated">Условия</a>
+                <Link to="/404" className="menu__mobile-link is-animated">Условия</Link>
                 <Link to="/questions" className="menu__mobile-link is-animated" rel="nofollow">Частые вопросы</Link>
             </nav>
             <a className="menu__login is-animated" href="" target="_blank" rel="nofollow">Войти</a>

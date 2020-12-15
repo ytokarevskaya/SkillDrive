@@ -61,7 +61,6 @@ html {
         height: 233px;
         background: white;
         border-radius: 8px;
-        transition: all 0.2 ease;
         @include breakpoint (medium) {
           margin-left: 10%;
           width: 668px;
@@ -72,17 +71,25 @@ html {
           margin-left: 20px;
         }
         .wrapper {
+          
           display: flex;          
           margin-left: 25px;
           margin-top: 30px;
-          @include breakpoint (medium) {
-            
+          position: fixed;
+          opacity: 0;
+
+          transition: opacity 0.3s ease-in;
+          &.is-active {
+            position: relative;
+            opacity: 1;
           }
           @include breakpoint (small) {
             margin-top: 20px;
           }
           img {
             align-self: flex-start;
+            width: 53px;
+            height: 53px;
           }
           &__text {
             display: flex;

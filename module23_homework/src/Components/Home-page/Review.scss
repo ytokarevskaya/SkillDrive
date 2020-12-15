@@ -56,6 +56,7 @@
           }
           img {
             align-self: flex-start;
+            transition: all 0.2 ease;
           }
           &__text {
             display: flex;
@@ -64,16 +65,19 @@
             margin-top: 1%;
               &-name {
                 font-weight: 700;
+                transition: all 0.2 ease;
               }
               &-city {
                 font-size: 14px;
                 margin-top: 4px;
                 color: #636780;
+                transition: all 0.2 ease;
               }
               &-monolog {
                 margin-top: 18px;
                 line-height: 23px;
                 padding-right: 75px;
+                transition: all 0.2 ease;
                 @include breakpoint (small) {
                   font-size: 12px;
                   padding-right: 20px;

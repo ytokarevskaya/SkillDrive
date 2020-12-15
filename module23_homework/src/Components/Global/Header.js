@@ -15,7 +15,7 @@ const Header = ({isMain = ""}) => {
                     </Link>
                     <div className="navbar__menu is-desktop">
                             <Link to="/about" className="navbar__menu-item is-animated" rel="nofollow">О нас</Link>
-                            <a className="navbar__menu-item is-animated" target="_blank" rel="nofollow">Условия</a>
+                            <Link to="/404" className="navbar__menu-item is-animated" rel="nofollow">Условия</Link>
                             <Link to="/questions" className="navbar__menu-item is-animated" rel="nofollow">Частые вопросы</Link>
                             <a className="navbar__menu-login is-animated" href="" target="_blank" rel="nofollow">Войти</a>
                     </div>

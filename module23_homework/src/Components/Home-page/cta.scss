@@ -20,17 +20,14 @@
       }
     }
     a {
-      @include breakpoint (medium) {
-        display: flex;
-        justify-content: center;
-
-      }
+      width: 100%;
+      text-align: center;
       button {
         margin-top: 40px;
         @include breakpoint (medium) {
           margin-top: 30px;
+          width: 80%;
         }
-    }
-
+      }
     }
   }
