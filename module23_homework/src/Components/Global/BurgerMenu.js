@@ -6,7 +6,6 @@ const BurgerMenu = () => {
         document.querySelector(".mobile__wrapper").classList.toggle("is-active");
         burger ? animateBurger(burger = false) : animateBurger(burger = true);  
     };
-
     return (
     <div className={burger ? "mobile__burger is-mobile" : "mobile__burger is-active is-mobile"} onClick={handleClick}>
         {[0,1,2].map((el) => {
