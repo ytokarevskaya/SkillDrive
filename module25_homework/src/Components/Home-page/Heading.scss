@@ -52,15 +52,19 @@
           padding-top: 17px;
       }
     }
-    a {
-      pointer-events: none;
+    &-link {
       z-index: 6;
+      width: 40%;
+      height: 50px;
+      margin-top: 40px;
+      @include breakpoint (medium) {
+        margin-top: 25px;
+        width: 100%;
+    }
       button {
-          margin-top: 40px;
-  
+          width: 100%;
           @include breakpoint (medium) {
-              margin-top: 25px;
-              width: 90%;
+              width: 100%;
           }
         }
     }

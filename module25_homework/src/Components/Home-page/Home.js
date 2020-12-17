@@ -10,7 +10,7 @@ import Cta from './Cta';
 
 const Home = () => (
     <Fragment>
-        <Header isMain="something"/>
+        <Header isMain/>
         <Heading />
         <Description />
         <RentRule />

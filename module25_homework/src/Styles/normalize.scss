@@ -191,6 +191,12 @@ button {
   border: none; 
   outline: none;
   cursor: pointer;
+  pointer-events: all;
+  &.is-disable {
+    background: #E6E6E6;
+    color: $disable;
+    pointer-events: none;
+  }
 }
 
 /**
@@ -201,6 +207,17 @@ button {
 button,
 input { /* 1 */
   overflow: visible;
+  padding: 14px 12px;
+  border-radius: 8px;
+  border-color: $disable;
+  width: 444px;
+  &.is-active {
+    border-color: $green-rect;
+  }
+  &.is-mini {
+    width: 155px;
+    margin-right: 289px;
+  }
 }
 
 /**

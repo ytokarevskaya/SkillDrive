@@ -8,7 +8,7 @@ const Header = ({isMain}) => {
     return (
     <Fragment>
         <header>
-            <nav className ={isMain != "" ? "is-main" : ""}>
+            <nav className ={isMain ? "is-main" : ""}>
                 <div className="navbar__container">
                     <Link to="/" rel="nofollow">
                         <img src={ logo } className="navbar__brand-text" alt="logo"/>
