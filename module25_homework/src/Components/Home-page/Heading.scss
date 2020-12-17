@@ -64,8 +64,11 @@
       button {
           width: 100%;
           @include breakpoint (medium) {
-              width: 100%;
+              width: 90%;
           }
+          @include breakpoint (small) {
+            width: 100%;
+        }
         }
     }
     @include breakpoint (medium) {

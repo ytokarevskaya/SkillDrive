@@ -217,6 +217,9 @@ input { /* 1 */
   &.is-mini {
     width: 155px;
     margin-right: 289px;
+    @include breakpoint (medium) {
+      margin-right: 0px;
+    }
   }
 }
 

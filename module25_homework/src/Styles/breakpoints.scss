@@ -19,6 +19,11 @@
       @content;
     }
   }
+  @else if $point == iphone5 {
+    @media screen and (max-width: 370px) {
+      @content;
+    }
+  }
 }
 
 .is-desktop {
